@@ -26,22 +26,24 @@
     {{-- template --}}
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    
     <!-- Custom styles -->
+    <link rel="stylesheet" href="css/admin.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
     
 </head>
 <body>
     <div id="app">
         <header>
-            @include('layouts.nav')
+            @include('layouts.user_auth.nav')
         </header>
 
-        <main class="">
+        <main class="pt-5">
             @yield('content')
         </main>
 
         
-        @include('layouts.footer')
+        @include('layouts.user_auth.footer')
     </div>
 </body>
 </html>

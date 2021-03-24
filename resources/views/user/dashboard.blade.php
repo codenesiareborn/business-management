@@ -1,8 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.user_auth.app')
 
 @section('content')
-  <!--Main layout-->
-  <main style="margin-top: 58px">
     <div class="container pt-4">
       <!-- Section: Main chart -->
       <section class="mb-4">
@@ -415,8 +413,6 @@
       </section>
       <!--Section: Statistics with subtitles-->
     </div>
-  </main>
-  <!--Main layout-->
 
   <!-- MDB -->
   {{-- <script type="text/javascript" src="js/mdb.min.js"></script> --}}

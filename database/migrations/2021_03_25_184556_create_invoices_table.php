@@ -18,6 +18,20 @@ class CreateInvoicesTable extends Migration
             $table->foreignId('company_id')->constrained('companies')->onDelete('cascade');
             $table->foreignId('product_id')->constrained('products')->onDelete('cascade');
             $table->foreignId('mitra_id')->constrained('mitras')->onDelete('cascade');
+            $table->string('no')->nullable();
+            $table->string('date_invoice')->nullable();
+            $table->string('sales_person')->nullable();
+            $table->string('terms')->nullable();
+            $table->string('currency')->nullable();
+            $table->string('due_date')->nullable();
+            $table->string('disccount')->nullable();
+            $table->string('tax')->nullable();
+            $table->string('total')->nullable();
+            $table->string('date')->nullable();
+            $table->string('information')->nullable();
+            $table->string('terms_condition')->nullable();
+            $table->string('termin_invoice')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

@@ -1,0 +1,20 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class CompanieSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        for ($i=0; $i < 19; $i++) { 
+            DB::table('companies')->insert([
+                'created_at' => now(),
+            ]);
+        }
+    }
+}
